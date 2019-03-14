@@ -14,7 +14,7 @@ class Person:
     def giveRaise(self, percent):
         self.pay *= (1+percent)
 
-
+# code for testing
 if __name__ == '__main__':
     bob = Person('Bob Smith', 42, 30000, 'software')
     sue = Person('Sue Jones', 45, 40000, 'hardware')
