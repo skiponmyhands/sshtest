@@ -5,6 +5,7 @@ fieldnames = ('name', 'age', 'job', 'pay')
 db = shelve.open(r'F:\Repository\sshtest\OOP\person_data\class-shelve')
 while True:
     key = input('\nKey? => ')
+        
     if not key:
         break
     if key in db:
