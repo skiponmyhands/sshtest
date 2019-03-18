@@ -1,4 +1,4 @@
-from person_start import Person
+from person import Person
 
 
 class Mannager(Person):

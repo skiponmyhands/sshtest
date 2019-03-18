@@ -12,7 +12,8 @@ class Person:
         return self.name.split()[-1]
 
     def giveRaise(self, percent):
-        self.pay *= (1+percent)
+        self.pay *= (1.0+percent)
+
 
 # code for testing
 if __name__ == '__main__':
