@@ -1,5 +1,5 @@
 from tkinter import *
-from tkinter.messagebox import showerror
+from tkinter.messagebox import showerror, showinfo
 import shelve
 shelvename = r'F:\Repository\sshtest\OOP\person_data\class-shelve'
 fieldnames = ('name', 'age', 'job', 'pay')
@@ -43,6 +43,7 @@ def updateRecord():
     for field in fieldnames:
         setattr(record, field, eval(entries[field].get()))
     db[key] = record
+    showinfo(title = 'Success', message='Update successfully')
 
 db = shelve.open(shelvename)
 window = makeWidgets()
